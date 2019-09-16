@@ -1,0 +1,88 @@
+/*vamoslimpar o navegador*/
+@import "reset.css";
+
+.logo {
+    width: 200px;
+   }
+
+.logo > img {
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 10%:
+}
+
+.header-top {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    border-bottom: solid 2px rgba(236,116,17,0.7);
+    background: #fff;
+    z-index: 3;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+
+.full-banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /*border: solid 2.5px rebeccapurple;*/
+    z-index: 0;
+    overflow: hidden;
+}
+
+.destaque {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    /*border: solid 0.5px red;*/
+    bottom: -250px;
+    left: 10%;
+    color: #f4f4f4;
+    background: rgba(0,0,0,0.5);
+    transition-duration: 1s;
+    transition-delay: 2s;
+}
+
+.full-banner:hover .destaque{
+    cursor: pointer;
+    bottom: 20%;
+}
+
+section.full-banner {
+    background: url("../images/bg-full-banner.jpg") no-repeat;
+    background-size: cover;
+}
+
+.menu-top li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.menu-top li a {
+    color: #333;
+    text-decoration: none;
+}
+.menu-top li:hover a {
+    color: orange;
+}
+.menu-top li:hover a {
+    border-bottom: solid 2px orange;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.active {
+    background: #333;
+   
+}
+li.active a {
+    color:#f4f4f4;
+    font-weight: bold;
+}
+
